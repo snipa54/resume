@@ -1,50 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<head   class="head">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>Resume</title>
+    <style>
+        .head {
+            padding: 20px;
+            background: #eee;
+            font-size: 2rem;
+        }
+        @media (max-width: 650px) {
+            .head {
+                font-size: 1.5rem;
+                padding: 10px;
+                text-align: center;
+            }
+        }
+    </style>
     <link   href="img.css" rel="stylesheet"  type="text/css"/>
 </head>
-<body>
+<body> 
 
-
-<p>
-   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoDmstWjNZRPaOxQw-LmuQ9taJE79_Uqqy1cjs-PSp1w&s" width="150">
-
-</p>
-<h1>Semenov Andrey Samiilychshivech</h1> 
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoDmstWjNZRPaOxQw-LmuQ9taJE79_Uqqy1cjs-PSp1w&s" width="150"  class="avatar">
+<div class="info-text">
+<div    class="info">
+<h1>Семенов Андрей Владиславович</h1> 
 
 
 <hr>
-<h2>Я основатель одноименного <strong>Youtube канала</strong> и онлайн школы по програмированию <strong>Result School</strong></h2>
-<h2><em>Я люблю путешевствовать,заниматься спортом и програмировать</em></h2>
-<h3>Список социальных сетей:</h3>
+<p>Я основатель одноименного <strong>Youtube канала</strong> и онлайн школы по програмированию <strong>Result School</strong></p>
+<p><em>Я люблю путешевствовать,заниматься спортом и програмировать</em></p>
+<p>Список социальных сетей:</p>
+</div>
+<br>
 
-<a  href="https://www.instagram.com/"   target="_blank">Instagram   |</a>
-<a  href="https://telegram.org/"    target="_blank">Telegramm   |</a>
-<a  href="https://www.youtube.com/"   target="_blank">YouTube   |</a>
-
-<H2> <h1>мои хобби</h1>
-    <ol>
+<a  href="https://www.instagram.com/"   target="_blank" class="btn">Instagram   |</a>
+<a  href="https://telegram.org/"    target="_blank" class="btn">Telegramm   |</a>
+<a  href="https://www.youtube.com/"   target="_blank"   class="btn">YouTube   |</a>
+   <br>
+   <br>
+    </div>
+<br>
+ <div   class="card    bg-yellow">
+    <h1>Мои хобби</h1>
+    <ol class="List">
         <li>Путешевствие</li>
         <li>Блогинг</li>
         <li>Горные лыжи</li>
     </ol>
-</H2>
-</body>
+</div>
+<br>
+<div    class="card bg-green">
+
+   
 <h1>Опыт работы</h1>
 
-<table    border="2"  width="500">
-  <thead>
-      <tr>
+
+<table    border-bottom="2"  width="500"    class="table">
+  
+</div>
+<!-- <thead>
+  <tr>
           <td>Название</td>
           <th>Должность</th>
           <th>Год</th>
       </tr>
-
-        <tbody>
+    </thead> -->
+    <tbody>
               <td>LPTracker</td>
               <td>Frotend</td>
               <td>2015-2016</td>
@@ -61,26 +85,32 @@
           <td>CEO</td>
           <td>2019-сейчас</td>
       </tr>
-        </tbody>
-</table>
 
+    </tbody>
+  </thead>
+</table>
+</div>
+
+
+
+<form   action="/"  class="form">
 
 <h1>Связаться со мной</h1>
-
-<form>
-<div>
-    <label  for="text2"><strong>Ваше имя:</strong></label>
+<div    class="form-row">
+ <div   class="form-group">   
+    <label  for="name"><strong>Ваше имя:</strong></label>
     <input type="tetx"  id="text2"  placeholder="Введите имя">
-</div>
-
-<div>
+ </div>
+ 
+ <div class="form-group">
     <label  for="Emeil"><strong>Ваш Emeil:</strong></label>
     <input type="email"  id="Emeil" placeholder="Введите email">
+ </div>
 </div>
 
-<div>
+<div    class="form-group">
     <label  for="massage"><strong>Ваше Сообщение:</strong></label>
-    <br>
+    
     <textarea   id="massage"    cols="15"   rows="5"    placeholder="Введите сообщение..."></textarea>
 </div>
 
@@ -88,8 +118,8 @@
    <!--input    type="submit"   value="Отправить">
 -->
     
-    <button type="submit">Отправить!</button>
-    
+    <button type="submit"   class="btn">Отправить!</button>
+ 
 </form>
 
 
